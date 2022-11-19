@@ -102,7 +102,21 @@ const routes = [
                 }
             ]
         }
-    }
+    },
+    {
+        name: "PageNotFound",
+        path: "*",
+        component: () => import("../views/PageNotFound"),
+        meta: {
+            title: 'PageNotFound',
+            metaTags: [
+                {
+                    name: 'PageNotFound',
+                    content: 'Page not found'
+                }
+            ]
+        }
+    },
 ]
 
 const router = new VueRouter({
