@@ -1,0 +1,13 @@
+.profImage {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    /*border: 1px solid white;*/
+    border-radius: 50%;
+    aspect-ratio: auto 30 / 30
+}
+.info {
+    line-height: 1rem;
+}

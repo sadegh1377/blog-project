@@ -53,6 +53,8 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/styles/GlobalStyles.css";
+
 .mainBackground {
   background-color: #f9f9f9;
 }
@@ -77,13 +79,6 @@ input {
 }
 
 .profImage {
-  display: inline-block;
-  margin-right: 5px;
-  /*margin-bottom: 25px;*/
-  width: 30px;
-  height: 30px;
-  /*border: 1px solid white;*/
-  border-radius: 50%;
-  aspect-ratio: auto 30 / 30
+  margin-left: 0 !important;
 }
 </style>

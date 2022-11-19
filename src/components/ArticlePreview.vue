@@ -60,25 +60,17 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/styles/GlobalStyles.css";
+
 .profImage {
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 25px;
-  width: 30px;
-  height: 30px;
-  /*border: 1px solid white;*/
-  border-radius: 50%;
-  aspect-ratio: auto 30 / 30
+  margin-bottom: 25px !important;
+
 }
 
 .card-header {
   background-color: white !important;
 }
 
-.info {
-  line-height: 1rem;
-
-}
 
 .username {
   font-size: 15px;

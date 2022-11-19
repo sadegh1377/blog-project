@@ -65,15 +65,11 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/styles/GlobalStyles.css";
+
 .profImage {
-  display: inline-block;
-  margin-right: 5px;
-  margin-left: 5px;
-  width: 27px;
-  height: 27px;
-  /*border: 1px solid white;*/
-  border-radius: 50%;
-  aspect-ratio: auto 30 / 30
+  width: 27px !important;
+  height: 27px !important;
 }
 
 .navbar-brand {
