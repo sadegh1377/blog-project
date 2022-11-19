@@ -17,7 +17,7 @@
             <font-awesome-icon icon="plus" class="like-btn-icon"/>
             Follow {{ username }}
           </button>
-          <button type="button" class="like-btn" @click="removeFromFavorite(article)"  v-if="article.favorited">
+          <button type="button" class="like-btn" @click="removeFromFavorite(article)" v-if="article.favorited">
             <font-awesome-icon icon="heart-circle-plus" class="like-btn-icon"/>
             Favorite Article ({{ article.favoritesCount }})
           </button>
@@ -51,8 +51,9 @@ export default {
   components: {ArticleComments}
 }
 </script>
-
 <style scoped>
+@import "../assets/styles/GlobalStyles.css";
+
 .article-header {
   background-color: #333333;
   color: white;
@@ -63,33 +64,21 @@ export default {
 }
 
 .profImage {
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 25px;
-  width: 30px;
-  height: 30px;
-  /*border: 1px solid white;*/
-  border-radius: 50%;
-  aspect-ratio: auto 30 / 30
+  margin-bottom: 25px !important;
 }
 
 .info-margin-right {
   margin-right: 25px;
-
 }
 
 .follow-btn {
-  height: 30px;
+  height: 50%;
   color: #999999;
   background-color: transparent;
   border: 1px solid #999999;
   margin-right: 5px;
 }
 
-.info {
-  line-height: 1rem;
-
-}
 
 .username {
   font-size: 15px;
@@ -102,7 +91,7 @@ export default {
 }
 
 .like-btn {
-  height: 30px;
+  height: 50%;
   color: #5CB85C;
   background-color: transparent;
   border: 1px solid #5CB85C;
